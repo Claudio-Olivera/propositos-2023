@@ -7,9 +7,10 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { LoginComponent } from './components/auth/login/login.component';
 
 import { TaskComponent } from './components/task/task.component';
-import { TaskFormComponent } from './components/task-form/task-form.component';
-import { TaskListComponent } from './components/task-list/task-list.component';
+
 import { FormsModule } from '@angular/forms';
+import { GoalListComponent } from './components/pages/goal-list/goal-list.component';
+import { GoalFormComponent } from './components/pages/goal-form/goal-form.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +18,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     LoginComponent,
     TaskComponent,
-    TaskFormComponent,
-    TaskListComponent
+    GoalListComponent,
+    GoalFormComponent
   ],
   imports: [
     BrowserModule,
