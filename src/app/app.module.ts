@@ -11,6 +11,7 @@ import { TaskComponent } from './components/task/task.component';
 import { FormsModule } from '@angular/forms';
 import { GoalListComponent } from './components/pages/goal-list/goal-list.component';
 import { GoalFormComponent } from './components/pages/goal-form/goal-form.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import { GoalFormComponent } from './components/pages/goal-form/goal-form.compon
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

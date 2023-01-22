@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectorRef } from '@angular/core';
 import { Goal } from 'src/app/interfaces/goal';
 
 @Component({
@@ -9,5 +9,16 @@ import { Goal } from 'src/app/interfaces/goal';
 export class GoalListComponent {
 
 @Input() goalList:Goal[]=[]
+
+completed:boolean=false;
+
+constructor(private cd:ChangeDetectorRef){}
+
+
+  changeToComplete(goal:Goal){
+   goal.completed =! goal.completed
+    this.cd.detectChanges()
+  }
+  
 
 }
