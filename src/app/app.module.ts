@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { LoginComponent } from './components/auth/login/login.component';
 
-import { TaskComponent } from './components/task/task.component';
+
 
 import { FormsModule } from '@angular/forms';
 import { GoalListComponent } from './components/pages/goal-list/goal-list.component';
@@ -18,7 +18,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AppComponent,
     HomeComponent,
     LoginComponent,
-    TaskComponent,
     GoalListComponent,
     GoalFormComponent
   ],
