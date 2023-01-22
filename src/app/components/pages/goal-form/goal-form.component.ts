@@ -11,10 +11,13 @@ export class GoalFormComponent {
   goalList:Goal[] = []
   newGoalname=''
 
-  saveGoal(){
-    this.goalList.push({
-     name : this.newGoalname,
-     completed: false
-    })
+   onSubmit(formValid: boolean) {
+    if(formValid){
+      this.goalList.push({
+        name : this.newGoalname,
+        completed: false
+       }) 
+      this.newGoalname = "";
+    }
   }
 }
