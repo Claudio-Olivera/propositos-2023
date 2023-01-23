@@ -3,7 +3,7 @@
     <button class="hover:text-red-600">
       <fa-icon class="text-4xl" [icon]="faTrashCan" (click)="deleteGoal(goal)"></fa-icon>
     </button>
-    <p  class="w-1/4 m-2 rounded-md text-white p-2 text-2xl" [ngClass]="{'w-full border border-green-500 bg-green-400': goal.completed,'w-full border border-red-500 bg-red-400': !goal.completed}">
+    <p class="w-5/12 m-2 rounded-md text-white p-2 text-2xl" [ngClass]="{'w-full border border-green-500 bg-green-400': goal.completed,'w-full border border-red-500 bg-red-400': !goal.completed}">
       {{ goal.name }} 
     </p>
     <button class="hover:text-green-600">
