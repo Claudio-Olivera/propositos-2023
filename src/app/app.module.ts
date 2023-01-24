@@ -1,32 +1,35 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/pages/home/home.component';
-import { LoginComponent } from './components/auth/login/login.component';
+import { AuthComponent } from './components/auth0/auth/auth.component';
+import { AccountComponent } from './components/auth0/account/account.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
+import { AppRoutingModule } from './app-routing.module';
 
-
-import { FormsModule } from '@angular/forms';
-import { GoalListComponent } from './components/pages/goal-list/goal-list.component';
 import { GoalFormComponent } from './components/pages/goal-form/goal-form.component';
+import { GoalListComponent } from './components/pages/goal-list/goal-list.component';
+import { HomeComponent } from './components/pages/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    LoginComponent,
+    AuthComponent,
+    AccountComponent,
+    GoalFormComponent,
     GoalListComponent,
-    GoalFormComponent
+    HomeComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    FontAwesomeModule
-
+    ReactiveFormsModule,
+    FontAwesomeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

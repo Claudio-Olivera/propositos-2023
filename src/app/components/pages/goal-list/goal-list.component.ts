@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Goal } from 'src/app/interfaces/goal';
+import { Goal } from '../../interfaces/goal';
 import { faTrashCan,faSquareCheck } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-goal-list',
