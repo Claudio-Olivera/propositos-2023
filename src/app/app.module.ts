@@ -13,6 +13,7 @@ import { GoalListComponent } from './components/pages/goal-list/goal-list.compon
 import { HomeComponent } from './components/pages/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './components/auth0/login/login.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     AccountComponent,
     GoalFormComponent,
     GoalListComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
 
   ],
   imports: [
